@@ -5,6 +5,7 @@ import Scroll from "../components/Scroll";
 import ErrorBoundary from "../components/ErrorBoundary";
 import "./App.css"
 import Header from "../components/Header";
+import CounterButton from "../components/CounterButton";
 
 import {setSearchField, requestRobots} from "../actions";
 import {connect} from "react-redux";
@@ -41,6 +42,7 @@ class App extends Component {
     (
       <div className="tc">
         <Header />
+        <CounterButton />
         <SearchBox searchChange={this.props.onSearchChange}/>
         <Scroll>
           <ErrorBoundary>
